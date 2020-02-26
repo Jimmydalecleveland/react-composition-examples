@@ -1,0 +1,27 @@
+{
+  "name": "webpack-setups",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm dist/main.js",
+    "start": "webpack-dev-server",
+    "develop": "webpack-dev-server --hot",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@hot-loader/react-dom": "^16.11.0",
+    "babel-loader": "^8.0.2",
+    "react-hot-loader": "^4.12.19",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "react": "16.11.0",
+    "react-dom": "16.11.0",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

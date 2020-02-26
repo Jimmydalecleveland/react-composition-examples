@@ -1,0 +1,1 @@
+export default ['Ray of Frost', 'Magic Missile', 'Prestidigitation']
