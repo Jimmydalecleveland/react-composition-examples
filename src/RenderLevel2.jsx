@@ -18,7 +18,7 @@ class RenderSpells extends Component {
   }
 
   render() {
-    if (this.state.loading) return <h2>Loading . . .</h2>
+    if (this.state.loading) return <h1>Loading level2. . .</h1>
     return this.props.children(this.state.level2)
   }
 }
