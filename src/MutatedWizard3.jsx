@@ -1,8 +1,11 @@
 import React from 'react';
-import useSpells from './useSpells'
+// import useSpells from './useSpells'
+import useSpells from './useSpellsState'
 
 const Wizard = ({ name = "not passed", school = "not passed" }) => {
-  const spells = useSpells()
+  const { spells, loading } = useSpells()
+
+  if (loading) return <h1>Loading . . .</h1>
   return (
     <div>
       <h3>Wizard's name: {name}.</h3>
