@@ -12,30 +12,26 @@ const App = () => {
   return (
     <RenderLevel1>
       {(level1) => (
-        <div>
-          <RenderLevel2>
-            {(level2) => (
-              <div>
-                <RenderSpells>
-                  {
-                    (spells) => console.timeEnd("RenderHell") || (
-                      <section>
-                        <Wizard name="Kanedias" school="Illusion">
-                          <p>Wizard's spells:</p>
-                          <ul>
-                            <li>{level1}</li>
-                            <li>{level2}</li>
-                            {spells.map(spell => <li key={spell}>{spell}</li>)}
-                          </ul>
-                        </Wizard>
-                      </section>
-                    )
-                  }
-                </RenderSpells>
-              </div>
-            )}
-          </RenderLevel2>
-        </div>
+        <RenderLevel2>
+          {(level2) => (
+            <RenderSpells>
+              {
+                (spells) => console.timeEnd("RenderHell") || (
+                  <section>
+                    <Wizard name="Kanedias" school="Illusion">
+                      <p>Wizard's spells:</p>
+                      <ul>
+                        <li>{level1}</li>
+                        <li>{level2}</li>
+                        {spells.map(spell => <li key={spell}>{spell}</li>)}
+                      </ul>
+                    </Wizard>
+                  </section>
+                )
+              }
+            </RenderSpells>
+          )}
+        </RenderLevel2>
       )}
     </RenderLevel1>
   )
