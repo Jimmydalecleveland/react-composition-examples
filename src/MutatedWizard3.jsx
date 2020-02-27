@@ -1,6 +1,6 @@
 import React from 'react';
-// import useSpells from './useSpells'
-import useSpells from './useSpellsState'
+import useSpells from './useSpells'
+// import useSpells from './useSpellsState'
 
 const Wizard = ({ name = "not passed", school = "not passed" }) => {
   const { spells, loading } = useSpells()

@@ -7,7 +7,7 @@ import useSpells from './useSpells'
 
 
 const App = () => { 
-  const hookSpells = useSpells()
+  const { spells: hookSpells } = useSpells()
 
   return (
     <section>

@@ -1,6 +1,6 @@
 import React from 'react';
-// import withSpells from './withSpells'
-import withSpells from './withSpellsState'
+import withSpells from './withSpells'
+// import withSpells from './withSpellsState'
 
 const Wizard = ({ name = "not passed", school = "not passed", spells = ["no spells"] }) => {
   return (

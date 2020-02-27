@@ -1,6 +1,6 @@
 import React from 'react';
-// import RenderSpells from './RenderSpells'
-import RenderSpells from './RenderSpellsState'
+import RenderSpells from './RenderSpells'
+// import RenderSpells from './RenderSpellsState'
 
 const Wizard = ({ name = "not passed", school = "not passed" }) => {
   return (
